@@ -27,6 +27,12 @@
     font-weight: 700;
 }
 
+.heading-white {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
 .heading-gradian {
     font-size: 48px;
     background: -webkit-linear-gradient(#F948B2 0%, #8758F1 100%);
@@ -145,6 +151,139 @@ header {
     margin-right: 10px;
 }
 
+/*---------------------------------------
+     play instantly section  
+---------------------------------------*/
+
+.play-instantly-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 0 0px;
+}
+
+.download-discriptin {
+    padding-right: 457px;
+}
+
+.download-image-div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sub-image {
+    position: relative;
+    bottom: 200px;
+    left: -200px;
+}
+
+/*---------------------------------
+        carear section 
+---------------------------------*/
+.carear-section {
+    margin: 50px 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+
+
+
+}
+
+.text-exception {
+    width: 600px;
+    margin: 10px 0;
+    color: #FFF;
+}
+
+.carear-object-div {
+    display: flex;
+
+}
+
+.carear-object {
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 20px 40px 20px 0;
+}
+
+.see-all-position-button {
+    padding: 21px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 48px;
+    color: #FF42A5;
+    background-color: white;
+}
+
+/*---------------------------------
+     top Gamer  section 
+-----------------------------------*/
+.gamer-section {
+    width: 100%;
+    text-align: center;
+
+}
+
+.top-gamer {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 50px auto;
+
+}
+
+.gamer-name-img {
+    display: flex;
+    align-items: center;
+    margin: 10px 15px;
+
+}
+
+.gamer-name-img:hover {
+    background-color: rgb(255, 248, 220);
+    border-radius: 30px;
+}
+
+.gamer-name-img h4 {
+    margin-left: 20px;
+}
+
+/*---------------------------
+     footer section  
+-----------------------------*/
+footer {
+    background-color: #0B0223;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.our-service {
+    display: flex;
+    margin: 20px 0;
+}
+
+.our-service p {
+    margin-right: 30px;
+}
+
+.midea-icon {}
+
+.midea-icon i {
+    font-size: 30px;
+    margin: 30px 10px;
+}
 
 /*-----------------------------
      large mobile device 
@@ -226,4 +365,65 @@ header {
         margin-bottom: 20px;
         width: 80%;
     }
+
+    /*------------------ play instantly section  --------*/
+    .play-instantly-section {
+        display: none;
+
+    }
+
+    /*-----------------carear section ---------------*/
+    .carear-section {
+        flex-direction: column;
+    }
+
+    .carear-section img {
+        width: 100%;
+    }
+
+    .carear-discription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .carear-object {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .text-exception {
+        width: 300px;
+    }
+
+    /*------------- gamer section style  -------------*/
+    .top-gamer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 5px;
+    }
+
+    .gamer-name-img {
+
+        margin: 0;
+
+    }
+
+
+    .our-service {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .mobile-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
 }
